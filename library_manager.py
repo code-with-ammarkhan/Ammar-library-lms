@@ -292,7 +292,8 @@ emoji_options = {
 #Logo CodeWithAmmar
 # GitHub se Sahi Raw Image Link
 logo_url = "https://raw.githubusercontent.com/code-with-ammarkhan/Ammar-library-lms/main/logo.jpg"
-# CSS Animation for Rotating Logo
+
+# CSS Animation for Rotating Logo with Margin
 st.sidebar.markdown(
     f"""
     <style>
@@ -306,6 +307,7 @@ st.sidebar.markdown(
         animation: spin 5s linear infinite;
         display: block;
         margin: auto;
+        margin-top: 100px;  /* Adjust this value to move it further down */
         border-radius: 50%;
     }}
     </style>
@@ -313,6 +315,7 @@ st.sidebar.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 nav_options = st.sidebar.radio(
