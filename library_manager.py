@@ -282,19 +282,19 @@ if lottie_book:
     with st.sidebar:
         st_lottie(lottie_book, height=200, key='book_animation')
 
+emoji_options = {
+    "📌 View Library": "library",
+    "📌 Add Book": "add",
+    "📌 Search Books": "search",
+    "📌 Library Statistics": "stats"
+}
+
 nav_options = st.sidebar.radio(
     "Choose an option:",
-    ["📌 View Library",  "📌 Add Book", "📌 Search Books", "📌 Library Statistics"]
+    list(emoji_options.keys())  
 )
 
-if nav_options == "View Library":
-    st.session_state.current_view = "library"
-elif nav_options == "Add Book":
-    st.session_state.current_view = "add"
-elif nav_options == "Search Books":
-    st.session_state.current_view = "search"
-elif nav_options == "Library Statistics":
-    st.session_state.current_view = "stats"
+st.session_state.current_view = emoji_options[nav_options]  
 
 # 5) Main Header
 st.markdown(
