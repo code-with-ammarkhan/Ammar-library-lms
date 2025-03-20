@@ -289,10 +289,13 @@ emoji_options = {
     "📌 Library Statistics": "stats"
 }
 
+
+
 # Sahi GIF URL
 gif_url = "https://raw.githubusercontent.com/code-with-ammarkhan/Ammar-library-lms/main/unscreen.gif"
 # Sidebar me GIF Show Karna
-st.sidebar.image(gif_url, use_column_width=True)
+st.sidebar.image(gif_url, use_container_width=True)
+
 
 nav_options = st.sidebar.radio(
     "Choose an option:",
