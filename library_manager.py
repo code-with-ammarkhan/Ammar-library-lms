@@ -290,11 +290,10 @@ emoji_options = {
 }
 
 
-
 # Sahi GIF URL
 gif_url = "https://raw.githubusercontent.com/code-with-ammarkhan/Ammar-library-lms/main/unscreen.gif"
-# Sidebar me GIF Show Karna
-st.sidebar.image(gif_url, use_container_width=True)
+# Sidebar me GIF Show Karna (Custom Width)
+st.sidebar.image(gif_url, width=150)  # Width ko adjust kar sakte ho
 
 
 nav_options = st.sidebar.radio(
