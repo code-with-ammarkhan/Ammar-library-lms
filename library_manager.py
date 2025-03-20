@@ -289,32 +289,6 @@ emoji_options = {
     "📌 Library Statistics": "stats"
 }
 
-#Logo CodeWithAmmar
-# GitHub se Sahi Raw Image Link
-logo_url = "https://raw.githubusercontent.com/code-with-ammarkhan/Ammar-library-lms/main/logo.jpg"
-# CSS Animation for Rotating Logo
-st.sidebar.markdown(
-    f"""
-    <style>
-    @keyframes spin {{
-        0% {{ transform: rotate(0deg); }}
-        100% {{ transform: rotate(360deg); }}
-    }}
-    .rotating-logo {{
-        width: 150px;
-        height: 150px;
-        animation: spin 5s linear infinite;
-        display: block;
-        margin: auto;
-        border-radius: 50%;
-    }}
-    </style>
-    <img src="{logo_url}" class="rotating-logo">
-    """,
-    unsafe_allow_html=True
-)
-
-
 nav_options = st.sidebar.radio(
     "Choose an option:",
     list(emoji_options.keys())  
